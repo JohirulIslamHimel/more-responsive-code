@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Flex</title>
+    <style>
+      body {
+        background-color: blue;
+        margin: 10px;
+      }
+      .container {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+      .box {
+        background-color: teal;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+      }
+      .item {
+        width: 100px;
+        background-color: slategrey;
+        padding: 10px;
+      }
+      .box-container {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+      @media screen and (max-width: 576px) {
+        body {
+          background-color: aqua;
+        }
+        .container {
+          flex-direction: column;
+        }
+        .item {
+        width: 100%
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Let's Explore Flex</h2>
+    <div class="container">
+      <!--.box>h3{box-$}+p{lorem50}-->
+      <div class="box">
+        <h3>box-1</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          fugiat quidem quas corrupti, natus minima facere doloremque fuga a
+          optio impedit praesentium culpa illo expedita, maiores dolores
+          explicabo minus. Maiores obcaecati fugit adipisci totam aperiam fugiat
+          quod culpa eveniet iure eum laboriosam doloremque minus a, ab,
+          quisquam itaque assumenda autem.
+        </p>
+      </div>
+      <div class="box">
+        <h3>box-2</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          fugiat quidem quas corrupti, natus minima facere doloremque fuga a
+          optio impedit praesentium culpa illo expedita, maiores dolores
+          explicabo minus. Maiores obcaecati fugit adipisci totam aperiam fugiat
+          quod culpa eveniet iure eum laboriosam doloremque minus a, ab,
+          quisquam itaque assumenda autem.
+        </p>
+      </div>
+    </div>
+    <div class="box-container">
+      <!--.item*20{box - $}-->
+      <div class="item">box-1</div>
+      <div class="item">box-2</div>
+      <div class="item">box-3</div>
+      <div class="item">box-4</div>
+      <div class="item">box-5</div>
+      <div class="item">box-6</div>
+      <div class="item">box-7</div>
+      <div class="item">box-8</div>
+      <div class="item">box-9</div>
+      <div class="item">box-10</div>
+      <div class="item">box-11</div>
+      <div class="item">box-12</div>
+      <div class="item">box-13</div>
+      <div class="item">box-14</div>
+      <div class="item">box-15</div>
+      <div class="item">box-16</div>
+      <div class="item">box-17</div>
+      <div class="item">box-18</div>
+      <div class="item">box-19</div>
+      <div class="item">box-20</div>
+    </div>
+  </body>
+</html>
